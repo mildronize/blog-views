@@ -1,6 +1,6 @@
 {
-    "alias": "leerob-blog-views",
-    "name": "leerob-blog-views",
     "version": 2,
+    "name": "leerob-blog-views",
+    "alias": "leerob-blog-views",
     "builds": [{"src": "index.js", "use": "now-micro"}]
 }
