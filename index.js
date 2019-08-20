@@ -9,14 +9,14 @@ module.exports = async (req, res) => {
         res.setHeader('Access-Control-Allow-Methods', 'GET');
     }
 
-    // ensure no duplicate voting
+    // ensure no duplicate views
     verify(req);
     const {
         query: {id}
     } = parse(req.url, true);
 
     if (!id) {
-        const err = new Error('Missing `id` parameter with blog post id');
+        const err = new Error('Missing `id` parameter');
         err.statusCode = 400;
         throw err;
     }
