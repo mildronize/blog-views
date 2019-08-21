@@ -18,7 +18,7 @@ This repo is a fork of [Guillermo Rauch's](https://github.com/rauchg/blog-views)
 
 Before running locally, you will need to create a database in Firebase and download your `service-account.json` file, which you can find [here](https://console.firebase.google.com/project/_/settings/serviceaccounts/adminsdk).
 
-Follow [this blog post (in progress)](https://leerob.io/blog/) for a step-by-step walkthrough.
+Follow [this blog post](https://leerob.io/blog/real-time-post-views/) for a step-by-step walkthrough.
 
 ```bash
 $ git clone https://github.com/leerob/blog-views.git
