@@ -1,14 +1,17 @@
 {
     "name": "leerob-blog-views",
     "dependencies": {
+        "express": "^4.17.1",
         "firebase": "^3.6.4",
         "firebase-admin": "^4.0.4",
         "micro": "^6.1.0",
         "ms": "^0.7.2",
-        "now-micro": "^0.4.0",
         "request-ip": "^1.2.3"
     },
     "scripts": {
-        "dev": "micro"
+        "start": "node index.js",
+        "deploy": "npm run deploy:only && npm run now:clean",
+        "deploy:only": "now --target production",
+        "now:clean": "now rm --safe --yes mildronize-blog-views"
     }
 }
