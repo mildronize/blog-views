@@ -11,7 +11,7 @@ const app = express();
 // });
 
 app.use(function(req, res, next) {
-    var allowedOrigins = ['https://mildronize.com', 'http://localhost:4000'];
+    var allowedOrigins = ['https://mildronize.com'];
     var origin = req.headers.origin;
     if(allowedOrigins.indexOf(origin) > -1){
         res.setHeader('Access-Control-Allow-Origin', origin);
